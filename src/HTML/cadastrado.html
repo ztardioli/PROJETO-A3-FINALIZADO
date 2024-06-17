@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coleta Seletiva | A3 Projeto</title>
+    <link rel="stylesheet" href="../CSS/cadastrado.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-texto">
+        <h1>Coleta Seletiva | Santos</h1>
+        <i class="fas fa-recycle"></i>
+        <h2>Universidade São Judas Unimonte</h2>
+      </div>
+    </header>
+    <section>
+      <p>Bem vindo ao nosso site de Coleta Seletiva - Santos</p>
+    </section>
+    <section>
+      <form id="materialForm">
+        <label>
+          <input type="radio" name="material" value="papel" />
+          Papel </label
+        ><br />
+        <label>
+          <input type="radio" name="material" value="metal" />
+          Metal </label
+        ><br />
+        <label>
+          <input type="radio" name="material" value="plastico" />
+          Plástico </label
+        ><br />
+        <label>
+          <input type="radio" name="material" value="vidro" />
+          Vidro </label
+        ><br />
+        <label>
+          <input type="radio" name="material" value="outros" />
+          Outros </label
+        ><br /><br />
+
+        <label for="infoExtra">Informações Extras:</label><br />
+        <input type="text" id="infoExtra" name="infoExtra" /><br /><br />
+
+        <label for="endereco">Endereço:</label><br />
+        <input type="text" id="endereco" name="endereco" /><br /><br />
+
+        <button type="button" onclick="obterMaterialSelecionado()">
+          Enviar
+        </button>
+      </form>
+
+      <p id="resultado"></p>
+    </section>
+    <section id="local">
+      <h2>Locais</h2>
+      <address>
+        Aparecida <br />
+        Boqueirão<br />
+        Campo Grande<br />
+        Caneleira<br />
+        Castelo<br />
+        Chico de Paula<br />
+        Embaré<br />
+        Encruzilhada<br />
+        Estuário<br />
+        Gonzaga<br />
+        José Menino<br />
+        Marapé<br />
+        Monte Serrat<br />
+        Morro da Nova Cintra<br />
+        Pacheco<br />
+        Paquetá<br />
+        Ponta da Praia<br />
+        Porto<br />
+        Saboó<br />
+        Santa Maria<br />
+        São Jorge<br />
+        São Manoel<br />
+        Sítio das Neves<br />
+        Valongo<br />
+        Vila Belmiro<br />
+        Vila Matias<br />
+      </address>
+    </section>
+    <footer>
+      <h4>2024 - A3 Projeto | Coleta Seletiva.</h4>
+    </footer>
+    <script src="../JS/cadastrado.js"></script>
+  </body>
+</html>

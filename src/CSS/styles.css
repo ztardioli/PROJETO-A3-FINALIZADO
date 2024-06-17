@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fefae0;
+    background-image: url(../images/fundo-reciclagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+header {
+  background-color: #606c38;
+  text-align: center;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+}
+.header-texto {
+  padding: 10px;
+  margin-bottom: 35px;
+}
+.header-texto h1 {
+  font-size: 40px;
+}
+.header-texto h2 {
+  font-size: 30px;
+}
+
+section {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  font-size: 20px;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section h2 {
+  padding: 15px 0;
+}
+.papel {
+  border: solid blue 3px;
+  font-size: 20px;
+  width: fit-content;
+  padding: 0 7px;
+  border-radius: 10px;
+}
+.plastico {
+  border: solid red 3px;
+  font-size: 20px;
+  width: fit-content;
+  padding: 0 7px;
+  border-radius: 10px;
+}
+.vidro {
+  border: solid green 3px;
+  font-size: 20px;
+  width: fit-content;
+  padding: 0 7px;
+  border-radius: 10px;
+}
+.metal {
+  border: solid yellow 3px;
+  font-size: 20px;
+  width: fit-content;
+  padding: 0 7px;
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: black;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px 0 0 0;
+  background-color: #47723e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #204a2c;
+}
+
+footer {
+  background-color: #606c38;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: black;
+  margin-top: 35px;
+}

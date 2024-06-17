@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Status</title>
+    <style>
+      @media only screen and (min-width: 768px) {
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          background-color: #fefae0;
+          background-image: url(../images/fundo-reciclagem.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+      section {
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+        font-size: 20px;
+        width: 50%;
+        margin: auto;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: space-between;
+      }
+      button {
+        padding: 8px;
+        margin: 10px 0 0 0;
+        background-color: #47723e;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #204a2c;
+      }
+
+      th,
+      tr {
+        align-items: center;
+        justify-content: space-between;
+        align-content: space-between;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <table id="userTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Endereço</th>
+            <th>Serviço</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Os dados do usuário serão inseridos aqui -->
+        </tbody>
+      </table>
+
+      <form class="button" id="editForm" style="display: none">
+        <h3>Editar Serviço</h3>
+        <input type="hidden" id="editServiceId" />
+        <label for="editAddress">Endereço:</label>
+        <input type="text" id="editAddress" />
+        <br />
+        <label for="editService">Serviço:</label>
+        <input type="text" id="editService" />
+        <br />
+        <button type="button" onclick="saveService()">Salvar</button>
+      </form>
+    </section>
+
+    <script src="../JS/script.js"></script>
+    <script>
+      window.onload = () => {
+        listUsers();
+      };
+    </script>
+  </body>
+</html>

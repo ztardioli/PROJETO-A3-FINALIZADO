@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Coleta Seletiva | A3 Projeto</title>
+	<link rel="stylesheet" href="../CSS/styles.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+	<header>
+		<div class="header-texto">
+			<h1>Coleta Seletiva | Santos</h1>
+			<i class="fas fa-recycle"></i>
+			<h2>Universidade São Judas Unimonte</h2>
+		</div>
+	</header>
+	<section id="sobre">
+		<h2>O que é Coleta Seletiva?</h2>
+		<p>
+			<strong>Coleta Seletiva</strong> é a coleta diferenciada de resíduos que
+			foram previamente separados segundo a sua constituição ou composição. Ou
+			seja, resíduos com características similares são selecionados pelo
+			gerador (que pode ser o cidadão, uma empresa ou outra instituição) e
+			disponibilizados para a coleta separadamente. De acordo com a Política
+			Nacional de Resíduos Sólidos, a implantação da coleta seletiva é
+			obrigação dos municípios e metas referentes à coleta seletiva fazem
+			parte do conteúdo mínimo que deve constar nos planos de gestão integrada
+			de resíduos sólidos dos municípios. <br />
+			<br />
+			Na medida em que vários tipos de resíduos sólidos são misturados, sua
+			reciclagem se torna mais cara ou mesmo inviável, pela dificuldade de
+			separá-los de acordo com sua constituição ou composição. O processo
+			industrial de reciclagem de uma lata de alumínio, por exemplo, é
+			diferente da reciclagem de uma caixa de papelão.
+			<br /><br />
+			As formas mais comuns de coleta seletiva hoje existentes no Brasil são a
+			coleta porta-a-porta e a coleta por Pontos de Entrega Voluntária (PEVs).
+			A coleta porta-a-porta pode ser realizada tanto pelo prestador do
+			serviço público de limpeza e manejo dos resíduos sólidos (público ou
+			privado) quanto por associações ou cooperativas de catadores de
+			materiais recicláveis. É o tipo de coleta em que um caminhão ou outro
+			veículo passa em frente às residências e comércios recolhendo os
+			resíduos que foram separados pela população.
+			<br /><br />
+			Com esse aplicativo desenvolvido pelos estudantes da Universidade São
+			Judas Unimonte será mais fácil solicitar nossos serviços para a retirada
+			de lixos recicláveis em sua residência.
+		</p>
+	</section>
+
+	<section id="materiais">
+		<h2>Materiais</h2>
+		<ul>
+			<li class="papel">Papel</li>
+			<br />
+			<p>
+				Jornais, revistas, envelopes, rascunhos, papel sulfite, cartazes,
+				listas telefônicas, papel de fax, folhas de caderno, fotocópias,
+				formulários, caixas de papelão, cartolinas e aparas de papel.
+			</p>
+			<br />
+			<li class="plastico">Plástico</li>
+			<br />
+			<p>
+				Embalagens de produtos de limpeza, tupperware, baldes, canos, tubos de
+				pvc, frascos plásticos de produtos, sacos/sacolas, garrafas de
+				refrigerantes e garrafas plásticas.
+			</p>
+			<br />
+			<li class="vidro">Vidro</li>
+			<br />
+			<p>
+				Copos, tampa de forno microondas, frascos de vidro, potes de vidro,
+				cacos e garrafas de vidro.
+			</p>
+			<br />
+			<li class="metal">Metal</li>
+			<br />
+			<p>
+				Latas, ferragens, canos, pregos, aerossóis, cobre, parafusos,
+				embalagem, talheres de metal, enlatados e tampas de garrafa.
+			</p>
+			<br />
+		</ul>
+	</section>
+	<section id="login">
+		<h2>Login</h2>
+		<form id="formLogin">
+			<div class="form-group">
+				<label for="email_login">Email:</label>
+				<input type="email" id="email_login" name="email_login" required />
+			</div>
+			<div class="form-group">
+				<label for="senha_login">Senha:</label>
+				<input type="password" id="senha_login" name="senha_login" required />
+			</div>
+			<button type="button" onclick="login()">Entrar</button>
+		</form>
+	</section>
+	<section id="cadastro">
+		<h2>Cadastre-se</h2>
+		<form id="formCadastro">
+			<div class="form-group">
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" name="nome" required />
+			</div>
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required />
+			</div>
+			<div class="form-group">
+				<label for="senha">Senha:</label>
+				<input type="password" id="senha" name="senha" required />
+			</div>
+			<label for="telefone">Telefone:</label>
+			<input type="tel" id="telefone" name="telefone" required />
+			<button type="button" onclick="salvarCadastro()">Cadastrar</button>
+		</form>
+	</section>
+	<footer>
+		<h4>2024 - A3 Projeto | Coleta Seletiva.</h4>
+	</footer>
+	<script src="../JS/script.js"></script>
+</body>
+
+</html>
